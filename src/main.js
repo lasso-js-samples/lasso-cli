@@ -1,3 +1,4 @@
+require('./style.less');
 var add = require('./add');
 var jquery = require('jquery');
 

@@ -24,10 +24,10 @@ npm install lasso-cli --global
 To run the sample app in development mode (minification disabled, concatenation disabled, etc.), use the following command:
 
 ```bash
-./run-dev.sh
+npm run dev
 ```
 
-Running the above command will result in JavaScript and CSS bundles being written out to the `./static` directory. In addition, the [my-page.html](https://github.com/raptorjs/raptor-samples/blob/master/lasso-cli/my-page.html) file will be updated with the required `<script>` and `<link>` tags to include the required external resources. To test your program, open the updated `./my-page.html` file in your web browser.
+Running the above command will result in JavaScript and CSS bundles being written out to the `build/static/` directory. In addition, the [index.html](https://github.com/lasso-js/lasso-js-samples/blob/master/lasso-cli/src/index.html) file will be copied to the `build/` directory and updated with the required `<script>` and `<link>` tags to include the required external resources. To test your program, open `http://localhost:8080/` in your web browser.
 
 To run the sample app in production mode (minification enabled, concatenation enabled, etc.), use the following command:
 
@@ -35,4 +35,4 @@ To run the sample app in production mode (minification enabled, concatenation en
 ./run-prod.sh
 ```
 
-To test the production version of your program, open the updated `./my-page.html` file in your web browser.
+To test your program, open `http://localhost:8080/` in your web browser.
